@@ -1,11 +1,9 @@
 fileFormatVersion: 2
-guid: 19358be44ab50f04fab5caeca0a2c53b
+guid: 2be95f814796b614cbfd5c894d1adf5e
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - BreakSound: {instanceID: 0}
-  - BlockSparkleVFX: {instanceID: 0}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

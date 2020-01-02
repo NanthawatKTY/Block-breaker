@@ -10,11 +10,15 @@ public class SceneLoader : MonoBehaviour
         //int cuz SceneLoader is 1,2,3 or 4 integer
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;  //Scene we are on now
         SceneManager.LoadScene(currentSceneIndex + 1); //Cuz currentSceneIndex = 0 then +1+2+3+...+ X
+        
+
     }
 
     public void LoadStartScene()
     {
+        FindObjectOfType<GameSession>().ResetGame(); // Reset game from GameSession.cs
         SceneManager.LoadScene(0); //Load Start Scene [0] (index = 0)
+      
     }
 
  

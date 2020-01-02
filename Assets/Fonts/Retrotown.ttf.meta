@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: bcd455678054ec543a8e37c3b10b1995
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Retro Town
+  fontNames:
+  - Retro Town
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 8294324106dfa4e449358e27765ac278, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
