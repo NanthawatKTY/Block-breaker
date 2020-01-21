@@ -9,10 +9,15 @@ public class Paddle : MonoBehaviour
     [SerializeField] float maxX = 15f;
     [SerializeField] float screenWidthInUnits = 16f;
 
+    // cached references
+    GameSession theGameSession;
+    Ball theBall;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        theGameSession = FindObjectOfType<GameSession>();
+        theBall = FindObjectOfType<Ball>();
     }
 
     // Update is called once per frame
@@ -23,8 +28,20 @@ public class Paddle : MonoBehaviour
         Vector2 paddlePos = new Vector2(mousePosInUnits, transform.position.y); // x=mousePos , y=Already its pos
 
         //limit & stop paddle going off the screen by serialize variables for min and max
-        paddlePos.x = Mathf.Clamp(mousePosInUnits, minX , maxX); 
+        paddlePos.x = Mathf.Clamp(GetXPOS(), minX , maxX); 
         transform.position = paddlePos;
 
+    }
+
+    private float GetXPOS() 
+    {
+        if (FindObjectOfType<GameSession>().IsAutoPlayEnabled())
+        {
+            return theBall.transform.position.x;
+        }
+        else
+        {
+            return Input.mousePosition.x / Screen.width * screenWidthInUnits;
+        }
     }
 }

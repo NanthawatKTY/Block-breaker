@@ -10,7 +10,7 @@ public class SceneLoader : MonoBehaviour
         //int cuz SceneLoader is 1,2,3 or 4 integer
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;  //Scene we are on now
         SceneManager.LoadScene(currentSceneIndex + 1); //Cuz currentSceneIndex = 0 then +1+2+3+...+ X
-        
+     
 
     }
 
@@ -24,8 +24,10 @@ public class SceneLoader : MonoBehaviour
  
     public void QuitGame()
     {
+        if (Input.GetKey("escape"))
+        {
             Application.Quit();
-
+        }
     }
 
 }

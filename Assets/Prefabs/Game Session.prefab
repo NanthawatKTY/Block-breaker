@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 591, y: 498}
+  m_AnchoredPosition: {x: 492, y: 388}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1194951052310263
@@ -68,8 +68,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d428018f08ba39d40929fc727d5bfa0a, type: 2}
-  m_sharedMaterial: {fileID: 3630492125324711246, guid: d428018f08ba39d40929fc727d5bfa0a,
+  m_fontAsset: {fileID: 11400000, guid: 6f1626a74b883ff47ba03c2d6686faf0, type: 2}
+  m_sharedMaterial: {fileID: -5269446996274363039, guid: 6f1626a74b883ff47ba03c2d6686faf0,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -230,6 +230,7 @@ MonoBehaviour:
   gameSpeed: 1.12
   ScorePerBlockDestroyed: 83
   scoreText: {fileID: 1194951052310257}
+  isAutoPlayEnabled: 0
   currentScore: 0
 --- !u!1 &5628180706850151030
 GameObject:
